@@ -26,6 +26,7 @@
 	}
 
 	$file = 'urls.txt';
+	$url = 'http://shorturl.runosydan.net/';
 
 	// User added new link
 	if( isset( $_POST['url'] ) )
@@ -62,8 +63,8 @@
 		echo '<table width="100%" height="100%">';
 		echo '<tr height="95%"><td>';
 		echo '<div id="div-response">';
-		echo 'Your URL: <a href="' . $_SERVER['PHP_SELF'] . '?id=' . $last 
-			. '">' . $_SERVER['PHP_SELF'] . '?id=' . $last . '</a>';
+		echo 'Your URL: <a href="' . $url . '?id=' . $last 
+			. '">' . $url . '?id=' . $last . '</a>';
 		echo '</div>';
 		echo '</td></tr>';
 		echo '<tr><td>';
