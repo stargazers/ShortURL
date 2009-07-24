@@ -1,6 +1,61 @@
 body
 {
 	background-color: black;
+	margin-top: 30px;
+}
+
+#div-container
+{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#div-adding_form
+{
+	padding: 20px;
+	background-color: white;
+	text-align: center;
+}
+
+#div-last
+{
+	color: black;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-top: 1px;
+	background-color: #aacccf;
+}
+
+
+#div-last a:link, a:visited
+{
+	color: red;
+	text-decoration: none;
+	font-size: 0.9em;
+}
+
+#div-last h3
+{
+	margin-bottom: 0px;
+}
+
+#div-last a:hover
+{
+	background-color: white;
+}
+
+#div-error
+{
+	width: 600px;
+	height: 50px;
+	background-color: white;
+	text-align: center;
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #div-response
@@ -34,3 +89,4 @@ body
 	padding: 10px;
 	text-align: center;
 }
+
