@@ -1,0 +1,36 @@
+body
+{
+	background-color: black;
+}
+
+#div-response
+{
+	width: 600px;
+	height: 50px;
+	background-color: white;
+	text-align: center;
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#div-add_form
+{
+	width: 400px;
+	height: 100px;
+	background-color: white;
+	text-align: center;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#div-bottom
+{
+	background-color: white;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	text-align: center;
+}
