@@ -33,7 +33,6 @@
 	function create_site_end()
 	{
 		echo '</div>';
-
 		echo '</body>';
 		echo '</html>';
 	}
@@ -179,6 +178,21 @@
 		echo '<div id="div-last">';
 		echo '<h3>Last URLs</h3>';
 		get_last_items( $file, $num_last_items, $url );
+
+		echo '<p><a href="' . $file . '">Click here to see all URLs'
+			. '</a></p>';
+
+		// Show GPL info here and so on
+		echo '<div id="div-gpl">';
+		echo 'This code is licensed under GPL. ';
+		echo 'Source code is available at ';
+		echo '<a href="http://github.com/stargazers/ShortURL/tree/master">';
+		echo 'GitHub</a><br>';
+		echo 'Author: Aleksi Räsänen &lt;';
+		echo '<a href="mailto:aleksi.rasanen@runosydan.net">'
+			. 'aleksi.rasanen@runosydan.net</a>&gt; 2009';
+
+		echo '</div>';
 		echo '</div>';
 		create_site_end();
 	}
