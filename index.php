@@ -61,8 +61,11 @@
 				else
 					$text = $row[2];
 
-				echo '<a class="small" href="' . $row[2] . '">' 
-					. $text . '</a>';
+				// URLs are encoded, so decode it
+				$text = urldecode( $text );
+
+				echo '<a class="small" href="' . urldecode( $row[2] ) 
+					. '">' . $text . '</a>';
 				echo '<br>';
 
 				if( $counter == $num_last_items )
@@ -119,7 +122,8 @@
 
 		$line = '|' . $last . '|';
 
-		$line .= $_POST['url'] . '|';
+		// URLs must be encodedj
+		$line .= urlencode( $_POST['url'] ) . '|';
 		$line .= date( 'Y-m-d H:i:s' );
 		$line .= "\n";
 
@@ -157,7 +161,7 @@
 				if( strstr( $cur, $search ) != false )
 				{
 					$tmp = explode( '|', $cur );
-					$url = $tmp[2];
+					$url = urldecode( $tmp[2] );
 					header( 'Location: ' . $url );
 				}
 			}
