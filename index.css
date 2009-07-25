@@ -4,6 +4,7 @@ body
 	margin-top: 30px;
 }
 
+/* The whole site will be inside this div */
 #div-container
 {
 	width: 500px;
@@ -11,6 +12,7 @@ body
 	margin-right: auto;
 }
 
+/* Div where adding form is placed */
 #div-adding_form
 {
 	padding: 20px;
@@ -18,6 +20,7 @@ body
 	text-align: center;
 }
 
+/* Div where last added items are shown */
 #div-last
 {
 	color: black;
@@ -47,6 +50,8 @@ body
 	background-color: white;
 }
 
+/* Error div what will be shown if there is no permissions
+   to create file */
 #div-error
 {
 	width: 600px;
@@ -58,6 +63,7 @@ body
 	margin-right: auto;
 }
 
+/* Response div is used to show "Your URL" */
 #div-response
 {
 	width: 600px;
@@ -69,15 +75,16 @@ body
 	margin-right: auto;
 }
 
-#div-add_form
+#div-response a:link, a:visited
 {
-	width: 400px;
-	height: 100px;
-	background-color: white;
-	text-align: center;
-	padding: 10px;
-	margin-left: auto;
-	margin-right: auto;
+	text-decoration: none;
+	color: black;
+}
+
+#div-response a:hover
+{
+	text-decoration: underline;
+	background-color: #888777;
 }
 
 #div-bottom
