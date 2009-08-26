@@ -3,4 +3,5 @@
 	$url = 'http://s.runosydan.net/';
 	$num_last_items = 5;
 	$rewrite = 0;
+	$history = 1;
 ?>

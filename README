@@ -5,6 +5,7 @@ $file - File where URLs are stored
 $url - URL for your site
 $num_last_items - number of previous URLs to display
 $rewrite - 0/1 setting to use url rewriting, url will append directly to $url setting.
+$history - 0/1 setting to enable displaying previous URLs
 
 
 Rewriting URLs

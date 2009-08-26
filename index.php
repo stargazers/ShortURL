@@ -185,11 +185,14 @@
 		echo '</div>';
 
 		echo '<div id="div-last">';
-		echo '<h3>Last URLs</h3>';
-		get_last_items( $file, $num_last_items, $url );
 
-		echo '<p><a href="' . $file . '">Click here to see all URLs'
-			. '</a></p>';
+		if($history) {
+			echo '<h3>Last URLs</h3>';
+			get_last_items( $file, $num_last_items, $url );
+
+			echo '<p><a href="' . $file . '">Click here to see all URLs'
+				. '</a></p>';
+		}
 
 		// Show GPL info here and so on
 		echo '<div id="div-gpl">';
