@@ -1,0 +1,6 @@
+copy/move config.php.example to config.php.
+Update with your settings
+
+$file - File where URLs are stored
+$url - URL for your site
+$num_last_items - number of previous URLs to display

@@ -76,10 +76,7 @@
 		}
 	}
 
-	$file = 'urls.txt';
-	$url = 'http://s.runosydan.net/';
-	$num_last_items = 5;
-
+	include 'config.php';
 
 	// User added new link
 	if( isset( $_POST['url'] ) )
