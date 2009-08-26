@@ -4,3 +4,10 @@ Update with your settings
 $file - File where URLs are stored
 $url - URL for your site
 $num_last_items - number of previous URLs to display
+$rewrite - 0/1 setting to use url rewriting, url will append directly to $url setting.
+
+
+Rewriting URLs
+If rewrite is enabled and $url is set to http://mysite.com/url then the resulting link will be:
+http://mysite.com/url123 where 123 is the link number. The corresponding .htaccess entry would be:
+RewriteRule url([a-z0-9]+) /url/?id=$1

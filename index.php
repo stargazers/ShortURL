@@ -50,7 +50,8 @@
 				$row = explode( '|', $data[$i] );
 
 				// Show ID as an link
-				echo '<a href="' . $url . '?id=' . $row[1] . '">';
+				global $urlid;
+				echo '<a href="' . $url . $urlid . $row[1] . '">';
 				echo $row[1];
 				echo '</a> ';
 
@@ -77,6 +78,12 @@
 	}
 
 	include 'config.php';
+
+	if($rewrite) { 
+		$urlid='';
+	} else {
+		$urlid='?id=';
+	}
 
 	// User added new link
 	if( isset( $_POST['url'] ) )
@@ -128,9 +135,10 @@
 		fclose( $fh );
 
 		create_site_start();
+		global $urlid;
 		echo '<div id="div-response">';
-		echo 'Your URL: <a href="' . $url . '?id=' . $last 
-			. '">' . $url . '?id=' . $last . '</a>';
+		echo 'Your URL: <a href="' . $url . $urlid . $last 
+			. '">' . $url . $urlid . $last . '</a>';
 		echo '</div>';
 
 		/*
