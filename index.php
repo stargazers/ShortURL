@@ -45,7 +45,7 @@
 			$num_items = count( $data );
 
 			$counter = 0;
-			for( $i=$num_items; $i>0; $i-- )
+			for( $i=$num_items; $i >= 0 ; $i-- )
 			{
 				$row = explode( '|', $data[$i] );
 
@@ -186,7 +186,8 @@
 
 		echo '<div id="div-last">';
 
-		if($history) {
+		if( $history ) 
+		{
 			echo '<h3>Last URLs</h3>';
 			get_last_items( $file, $num_last_items, $url );
 
